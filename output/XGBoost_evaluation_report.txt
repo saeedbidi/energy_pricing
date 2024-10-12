@@ -1,0 +1,4 @@
+Performance of XGBoost:
+Root Mean Squared Error (RMSE): 2.5116683849723445
+Mean Absolute Error (MAE): 1.4660224147439214
+R-squared: 0.958397918146224

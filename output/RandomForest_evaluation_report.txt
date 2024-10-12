@@ -1,0 +1,4 @@
+Performance of RandomForest:
+Root Mean Squared Error (RMSE): 2.7317425227485304
+Mean Absolute Error (MAE): 1.5803326308621017
+R-squared: 0.9507881159483208
