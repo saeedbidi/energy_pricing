@@ -1,2 +1,0 @@
-[console_scripts]
-renewable_hedging_pricing = dynamic_pricing_hedging:main

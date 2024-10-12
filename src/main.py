@@ -49,5 +49,9 @@ X_test_weekly.dropna(inplace=True)
 rf_predictions_weekly = ml_model.predict('RandomForest', X_test_weekly)
 xgb_predictions_weekly = ml_model.predict('XGBoost', X_test_weekly)
 
-# Plot the weekly predictions
+# Plotting and saving results
 plotter.plot_predictions(y_test_weekly, {'RandomForest': rf_predictions_weekly, 'XGBoost': xgb_predictions_weekly}, output_folder='output')
+
+# Save evaluation report
+report.evaluate_model(y_test, rf_predictions, 'RandomForest', output_folder='output')
+report.evaluate_model(y_test, xgb_predictions, 'XGBoost', output_folder='output')

@@ -1,7 +1,0 @@
-setup.py
-renewable_hedging_pricing.egg-info/PKG-INFO
-renewable_hedging_pricing.egg-info/SOURCES.txt
-renewable_hedging_pricing.egg-info/dependency_links.txt
-renewable_hedging_pricing.egg-info/entry_points.txt
-renewable_hedging_pricing.egg-info/requires.txt
-renewable_hedging_pricing.egg-info/top_level.txt
