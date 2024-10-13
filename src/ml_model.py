@@ -17,7 +17,7 @@ class MLModel:
     RandomForest and XGBoost models.
     """
     def __init__(self):
-        # Initialize models
+        # Initialise models
         self.models = {
             'RandomForest': RandomForestRegressor(
                 n_estimators=100, random_state=42

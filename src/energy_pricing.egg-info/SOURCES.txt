@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-src/energy_pricing.egg-info/PKG-INFO
-src/energy_pricing.egg-info/SOURCES.txt
-src/energy_pricing.egg-info/dependency_links.txt
-src/energy_pricing.egg-info/entry_points.txt
-src/energy_pricing.egg-info/requires.txt
-src/energy_pricing.egg-info/top_level.txt

@@ -4,3 +4,4 @@ old/
 renewable_hedging_pricing.egg-info/
 __pycache__/
 *.py[cod]
+echo "*.egg-info" >> .gitignore
