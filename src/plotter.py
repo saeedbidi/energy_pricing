@@ -43,7 +43,7 @@ class Plotter:
         plt.xticks(rotation=45)
         plt.grid(True)
 
-        # Save the plot to the output folder
+        # Save the plot to output folder
         plot_filename = output_path / 'predictions_plot.png'
         plt.savefig(plot_filename)
         plt.close()
