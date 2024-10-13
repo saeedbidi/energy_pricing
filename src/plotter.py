@@ -22,9 +22,9 @@ class Plotter:
         output_path.mkdir(parents=True, exist_ok=True)
 
         # Define different line styles to differentiate the models visually
-        line_styles = ['-', '--', ':', '-.']
+        line_styles = ['--', ':', '-.']
 
-        # Initialize the plot
+        # Initialise the plot
         plt.figure(figsize=(10, 6))
 
         # Plot actual values
@@ -35,7 +35,7 @@ class Plotter:
             plt.plot(y_test.index, preds, label=f'{model_name} Predicted Prices',
                      linewidth=2, linestyle=line_styles[i % len(line_styles)])
 
-        # Customize the plot's appearance
+        # Customise the plot's appearance
         plt.legend()
         plt.title(title)
         plt.xlabel('Time')

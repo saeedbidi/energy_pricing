@@ -1,3 +1,8 @@
+"""
+This module provides an MLModel class for training and predicting with
+RandomForest and XGBoost models.
+"""
+
 import numpy as np
 import xgboost as xgb
 from sklearn.ensemble import RandomForestRegressor
@@ -7,16 +12,27 @@ logging.basicConfig(level=logging.INFO)
 
 
 class MLModel:
+    """
+    A machine learning model wrapper for training and predicting with 
+    RandomForest and XGBoost models.
+    """
     def __init__(self):
         # Initialize models
         self.models = {
-            'RandomForest': RandomForestRegressor(n_estimators=100, random_state=42),
-            'XGBoost': xgb.XGBRegressor(objective='reg:squarederror', n_estimators=100, random_state=42)
+            'RandomForest': RandomForestRegressor(
+                n_estimators=100, random_state=42
+                ),
+            'XGBoost': xgb.XGBRegressor(
+                objective='reg:squarederror', n_estimators=100, random_state=42
+                )
         }
         self.trained_models = {}  # Store trained models
         self.predictions = {}  # Store predictions from models
 
-    def train(self, model_name: str, X_train: np.ndarray, y_train: np.ndarray) -> None:
+    def train(self, model_name: str,
+              X_train: np.ndarray,
+              y_train: np.ndarray
+              ) -> None:
         """
         Trains a machine learning model.
 
@@ -35,7 +51,9 @@ class MLModel:
             self.trained_models[model_name] = model  # Save trained model
             logging.info(f'{model_name} training finished.')
         except Exception as e:
-            logging.error(f'Error occurred during {model_name} training: {str(e)}')
+            logging.error(
+                f'Error occurred during {model_name} training: {str(e)}'
+                )
 
     def predict(self, model_name: str, X_test: np.ndarray) -> np.ndarray:
         """
